@@ -1,0 +1,66 @@
+header {
+  background-color: #ff8052;
+  height: 95px;
+}
+h1 {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  top: 45px;
+}
+main {
+  padding: 15px;
+}
+h2,
+p {
+  font-size: 0.9rem;
+  line-height: 75px;
+}
+h2 {
+  color: #ff8052;
+  margin-left: 20px;
+}
+p {
+  color: #000;
+  margin: 0 40px 0 auto;
+  font-weight: bold;
+}
+.select {
+  width: 360px;
+  height: 80px;
+  border-bottom: 1px solid #ff8052;
+  margin: auto;
+  display: flex;
+}
+.select:first-child {
+  margin-top: 10px;
+}
+.memo {
+  width: 360px;
+  height: 300px;
+  border: 1px solid #ff8052;
+  border-top: none;
+  margin: auto;
+}
+.btn {
+  background-color: #ff8052;
+  text-align: center;
+  width: 120px;
+  height: 35px;
+  margin: 20px auto 10px;
+  border-radius: 5px;
+  button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 35px;
+  }
+}
+.no {
+  text-align: center;
+  button {
+    color: #ff8052;
+    font-size: 0.8rem;
+  }
+}
