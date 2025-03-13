@@ -1,0 +1,138 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0 10%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.class_num {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 20px;
+
+
+    .frame {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 65px;
+        height: 67px;
+        border: 1px solid #FF8052;
+        border-radius: 10px;
+
+        img {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 58px;
+            height: 60px;
+            border-radius: 10%;
+        }
+    }
+
+    p {
+        color: #FF8052;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+}
+
+.month_add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    h2 {
+        color: #FF8052;
+        font-size: 4.2rem;
+    }
+
+    button {
+        width: 108px;
+        height: 42px;
+        background-color: #FF8052;
+        border-radius: 5px;
+
+        a {
+            color: #fff;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+/* .calender {
+    margin: 0 auto;
+
+    .day *:first-child {
+        color: #FF6868;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: center;
+        justify-content: end;
+        padding: 0 0 10px 10px;
+    }
+
+    th {
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+    td {
+        width: 53px;
+        height: 78px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 1px solid tomato;
+        justify-content: flex-end;
+    }
+
+} */
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 7列にする */
+    /* max-width: 400px; */
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.day {
+    font-size: 1.2rem;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1.5rem;
+    border: 0.5px solid #FF8052;
+    border-radius: 3px;
+    min-height: 70px;
+    display: flex;
+    justify-content: end;
+    padding: 3px 5px 0 0;
+}
+
+.hid {
+    color: #fff;
+}
+
+.red {
+    color: #FF6868;
+}
