@@ -13,18 +13,32 @@ main {
   padding: 15px;
 }
 h2,
-p {
+p,
+input,
+select {
   font-size: 0.9rem;
-  line-height: 75px;
+  line-height: 80px;
 }
 h2 {
   color: #ff8052;
   margin-left: 20px;
 }
-p {
-  color: #000;
-  margin: 0 40px 0 auto;
+input {
+  margin: 25px 27px 0 auto;
+  padding: 10px;
+  width: 78px;
+  height: 30px;
   font-weight: bold;
+}
+input[type="date"] {
+  width: 140px;
+}
+select {
+  margin: 0 4px 0 auto;
+  font-weight: bold;
+}
+.non > select {
+  margin-right: 40px;
 }
 .select {
   width: 360px;
@@ -36,19 +50,25 @@ p {
 .select:first-child {
   margin-top: 10px;
 }
+.non {
+  border: none;
+}
 .memo {
   width: 360px;
-  height: 300px;
+  height: 280px;
   border: 1px solid #ff8052;
-  border-top: none;
+  border-radius: 5px;
   margin: auto;
+  h2 {
+    line-height: 50px;
+  }
 }
 .btn {
   background-color: #ff8052;
   text-align: center;
   width: 120px;
   height: 35px;
-  margin: 20px auto 10px;
+  margin: 30px auto 10px;
   border-radius: 5px;
   button {
     color: #fff;
@@ -63,4 +83,11 @@ p {
     color: #ff8052;
     font-size: 0.8rem;
   }
+}
+.memo > textarea {
+  width: 330px;
+  height: 200px;
+  margin: 0 0 0 15px;
+  font-weight: bold;
+  resize: none;
 }

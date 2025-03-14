@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>新規課題</title>
   </head>
   <link rel="stylesheet" href="css/ress.css" />
   <link rel="stylesheet" href="css/task.css" />
@@ -14,22 +14,31 @@
     <main>
       <div class="select">
         <h2>課題名</h2>
-        <p>work01</p>
+        <input type="text" value="work01"></input>
       </div>
       <div class="select">
         <h2>教科</h2>
-        <p>HTML</p>
+        <select>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScripts</option>
+        </select>
       </div>
       <div class="select">
         <h2>日付</h2>
-        <p>4/1 <i class="fa-solid fa-caret-down"></i></p>
+        <input type="date" value="2025-03-14">
       </div>
-      <div class="select">
+      <div class="select non">
         <h2>通知</h2>
-        <p>1日前</p>
+        <select>
+          <option value="1日前">1日前</option>
+          <option value="3日前">3日前</option>
+          <option value="1週間前">1週間前</option>
+        </select>
       </div>
       <div class="memo">
         <h2>メモ</h2>
+        <textarea></textarea>
       </div>
       <div class="btn">
         <a href="index.html"><button>＋ 課題の追加</button></a>
@@ -37,6 +46,7 @@
       <div class="no">
         <a href=""><button>キャンセル</button></a>
       </div>
+      
     </main>
   </body>
 </html>
