@@ -91,3 +91,8 @@ select {
   font-weight: bold;
   resize: none;
 }
+img {
+  position: absolute;
+  bottom: -160px;
+  right: 20px;
+}
