@@ -69,44 +69,6 @@ a {
     }
 }
 
-/* .calender {
-    margin: 0 auto;
-
-    .day *:first-child {
-        color: #FF6868;
-    }
-
-    table {
-        width: 100%;
-    }
-
-    th,
-    td {
-        text-align: center;
-        justify-content: end;
-        padding: 0 0 10px 10px;
-    }
-
-    th {
-        font-weight: normal;
-        font-size: 1.5rem;
-    }
-
-    td {
-        width: 53px;
-        height: 78px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        border: 1px solid tomato;
-        justify-content: flex-end;
-    }
-
-} */
-
-.calendar_wrap {
-    position: relative;
-}
-
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -170,4 +132,10 @@ a {
         left: 5px;
         background-color: #FFC17E;
     }
+}
+
+.logo img {
+    display: block;
+    margin: 0 0 0 auto;
+    margin-top: 100px;
 }
