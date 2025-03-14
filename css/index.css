@@ -103,6 +103,10 @@ a {
 
 } */
 
+.calendar_wrap {
+    position: relative;
+}
+
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -139,4 +143,31 @@ a {
 
 .selected {
     border: 2px solid #FE4F3F;
+}
+
+.relative {
+    position: relative;
+
+    .content_work,
+    .content_preparation {
+        width: 35px;
+        height: 11px;
+        color: #fff;
+        font-size: 0.8rem;
+        border-radius: 10%;
+    }
+
+    .content_work {
+        position: absolute;
+        top: 30px;
+        left: 5px;
+        background-color: #FF6868;
+    }
+
+    .content_preparation {
+        position: absolute;
+        top: 45px;
+        left: 5px;
+        background-color: #FFC17E;
+    }
 }
