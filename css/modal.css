@@ -1,0 +1,152 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+
+
+.modal-content{
+    color: #000000;
+    animation-name: modalopen;
+    animation-duration: 1s;
+    margin: auto;
+    background-color: #ffffff;
+    position: fixed;
+}
+
+
+
+.group{
+    border-radius: 0 10px 10px 0;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .modal-header{
+        position: relative;
+        h2{
+            font-size: 3rem;
+            color: #FF8052;
+            margin-left: 20px;
+        }
+        button{
+            padding: 10px;
+            background-color: #FF8052;
+            border: none;
+            color: #ffffff;
+            border-radius: 5px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+    
+    }
+}
+
+.days{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    background: #FF8052;
+    .modal-header{
+        color: #ffffff;
+        margin-left: 10px;
+    }
+    .modal-body{
+        background: #ffffff;
+        height: 100%;
+        padding-top: 60px;
+        overflow: scroll;
+        button{
+            padding: 10px;
+            background-color: #FF8052;
+            border: none;
+            color: #ffffff;
+            border-radius: 5px;
+            position: absolute;
+            right: 30px;
+            top: 60px;
+        }
+        
+    }
+
+}
+
+label {
+    display: block; 
+    cursor: pointer;
+    margin: 10px;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+.groupBox{
+    color: #FF8052;
+    border: solid 0.02px #cbcbcb;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    p{
+        margin-left: 20px;
+        font-size: 2rem;
+
+    }
+}
+
+.dayBox{
+    border: solid 1px #FF8052;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    .boxHeader{
+        line-height: 10px;
+        text-align: center;
+    }
+
+}
+
+
+input[type=radio] {
+    display: none; /* ラジオボタンを非表示にする */
+}
+
+input[type=radio]:checked + .groupBox{
+    background: #cbcbcb;/* マウス選択時の背景色を指定する */
+}
+input[type=radio]:checked + .dayBox{
+    background: #cbcbcb;/* マウス選択時の背景色を指定する */
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+

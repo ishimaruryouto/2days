@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
     <meta name="description" content="ここに説明文を設定">
-    <title>temp title</title>
+    <title>トップ画面</title>
 
     <!-- 公開の際必要なmeta情報 課題時はコメントでも可です
 <meta name="twitter:card" content="summary">
@@ -22,11 +22,48 @@
 <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
 -->
     <!-- ページのスタイルはheadの最後に記載 -->
-    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
+    <button class="clip-btn modalOpen" data-modal="0">グループ</button>
+    <!-- モーダル0 -->
+    <div id="modal0" class="modal">
+        <div class="modal-inner">
+            <div class="modal-content group">
+                <div class="modal-header">
+                    <h2>グループ</h2>
+                    <button>グループの追加</button>
+                </div>
+                <div class="modal-body">
+                        <label><input type="radio" value="WD1A" name="group" checked ><div class="groupBox"><img src="img/groupImg.png" alt=""><p>WD1A</p></div></label>
+                        <label><input type="radio" value="school" name="group" ><div class="groupBox"><img src="img/groupImg.png" alt=""><p>学生会</p></div></label>
+                        <label><input type="radio" value="OC" name="group" ><div class="groupBox"><img src="img/groupImg.png" alt=""><p>OC</p></div></label>            
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <button class=" modalOpen" data-modal="1">日程</button>
+    <!-- モーダル1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-inner">
+            <div class="modal-content days">
+                <div class="modal-header">
+                    <h3>4月13日</h3>
+                </div>
+                <div class="modal-body">
+                    <button>課題の追加</button>
+                        <label><input type="radio" value="HTML" name="task" ><div class="dayBox"><div class="boxHeader"><h3>work5</h3></div><p>メモを記入</p></div></label>            
+                        <label><input type="radio" value="js" name="task" ><div class="dayBox"><div class="boxHeader"><h3>課題３</h3></div><p>メモを記入</p></div></label>            
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
