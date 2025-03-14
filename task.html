@@ -14,11 +14,11 @@
     <main>
       <div class="select">
         <h2>課題名</h2>
-        <input type="text" value="work01"></input>
+        <input type="text" id="taskName" value="work01"></input>
       </div>
       <div class="select">
         <h2>教科</h2>
-        <select>
+        <select id="subject">
           <option>HTML</option>
           <option>CSS</option>
           <option>JavaScripts</option>
@@ -26,11 +26,11 @@
       </div>
       <div class="select">
         <h2>日付</h2>
-        <input type="date" value="2025-03-14">
+        <input type="date" id="date" value="2025-03-14">
       </div>
       <div class="select non">
         <h2>通知</h2>
-        <select>
+        <select id="notification">
           <option value="1日前">1日前</option>
           <option value="3日前">3日前</option>
           <option value="1週間前">1週間前</option>
@@ -38,15 +38,16 @@
       </div>
       <div class="memo">
         <h2>メモ</h2>
-        <textarea></textarea>
+        <textarea id="memo"></textarea>
       </div>
       <div class="btn">
-        <a href="index.html"><button>＋ 課題の追加</button></a>
+        <a href="index.html"><button id="addTaskButton">課題を追加する</button></a>
       </div>
       <div class="no">
-        <a href=""><button>キャンセル</button></a>
+        <a href="index.html"><button>キャンセル</button></a>
+        <img src="img/ToriNote.png" alt="ロゴ" width="75" height="75">
       </div>
-      <img src="img/ToriNote.png" alt="ロゴ" width="75" height="75">
     </main>
   </body>
+  <script src="js/task.js"></script>
 </html>

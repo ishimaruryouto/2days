@@ -2,6 +2,7 @@ header {
   background-color: #ff8052;
   height: 95px;
 }
+
 h1 {
   color: #fff;
   font-size: 1rem;
@@ -10,7 +11,7 @@ h1 {
   top: 45px;
 }
 main {
-  padding: 15px;
+  padding: 0 10%;
 }
 h2,
 p,
@@ -24,24 +25,27 @@ h2 {
   margin-left: 20px;
 }
 input {
-  margin: 25px 27px 0 auto;
+  margin: 20px 10px 0 auto;
   padding: 10px;
   width: 78px;
   height: 30px;
   font-weight: bold;
 }
 input[type="date"] {
-  width: 140px;
+  width: 120px;
 }
 select {
   margin: 0 4px 0 auto;
   font-weight: bold;
 }
+select:focus {
+  outline: none;
+}
 .non > select {
   margin-right: 40px;
 }
 .select {
-  width: 360px;
+  width: 320px;
   height: 80px;
   border-bottom: 1px solid #ff8052;
   margin: auto;
@@ -54,7 +58,7 @@ select {
   border: none;
 }
 .memo {
-  width: 360px;
+  width: 320px;
   height: 280px;
   border: 1px solid #ff8052;
   border-radius: 5px;
@@ -66,15 +70,14 @@ select {
 .btn {
   background-color: #ff8052;
   text-align: center;
-  width: 120px;
-  height: 35px;
+  width: 108px;
+  height: 42px;
   margin: 30px auto 10px;
   border-radius: 5px;
   button {
     color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 35px;
+    font-size: 0.8rem;
+    line-height: 42px;
   }
 }
 .no {
@@ -92,7 +95,6 @@ select {
   resize: none;
 }
 img {
-  position: absolute;
-  bottom: -160px;
-  right: 20px;
+  display: block;
+  margin: 0 0 0 auto;
 }

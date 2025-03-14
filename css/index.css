@@ -1,0 +1,138 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.class_num {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-top: 20px;
+
+  .frame {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 67px;
+    border: 1px solid #ff8052;
+    border-radius: 10px;
+
+    img {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 58px;
+      height: 60px;
+      border-radius: 10%;
+    }
+  }
+
+  p {
+    color: #ff8052;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+.month_add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  h2 {
+    color: #ff8052;
+    font-size: 4.2rem;
+  }
+
+  button {
+    width: 108px;
+    height: 42px;
+    background-color: #ff8052;
+    border-radius: 5px;
+
+    a {
+      color: #fff;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* 7列にする */
+  /* max-width: 400px; */
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.day {
+  font-size: 1.2rem;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 1.5rem;
+  border: 0.5px solid #ff8052;
+  border-radius: 3px;
+  min-height: 70px;
+  display: flex;
+  justify-content: end;
+  padding: 3px 5px 0 0;
+}
+
+.hid {
+  color: #fff;
+}
+
+.red {
+  color: #ff6868;
+}
+
+.selected {
+  border: 2px solid #fe4f3f;
+}
+
+.relative {
+  position: relative;
+
+  .content_work,
+  .content_preparation {
+    width: 35px;
+    height: 11px;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 10%;
+  }
+
+  .content_work {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    background-color: #ff6868;
+  }
+
+  .content_preparation {
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    background-color: #ffc17e;
+  }
+}
+
+.logo img {
+  display: block;
+  margin: 0 0 0 auto;
+  margin-top: 100px;
+}
