@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         taskDiv.style.marginTop = "40px";
         taskDiv.style.height = "20px";
         taskDiv.style.width = "50px";
-        taskDiv.style.dayElement.appendChild(taskDiv); // カレンダーの日付内に課題を追加
+
+        dayElement.appendChild(taskDiv);
       }
     });
   });

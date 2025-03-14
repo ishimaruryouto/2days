@@ -29,12 +29,83 @@
     <!-- ページのスタイルはheadの最後に記載 -->
     <link rel="stylesheet" href="css/ress.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
 
   <body>
+    <!-- モーダル0 -->
+    <div id="modal0" class="modal">
+      <div class="modal-inner">
+        <div class="modal-content group">
+          <div class="modal-header">
+            <h2>グループ</h2>
+            <button>グループの追加</button>
+          </div>
+          <div class="modal-body">
+            <label
+              ><input type="radio" value="WD1A" name="group" checked />
+              <div class="groupBox">
+                <img src="img/groupImg.png" alt="" />
+                <p>WD1A</p>
+              </div></label
+            >
+            <label
+              ><input type="radio" value="school" name="group" />
+              <div class="groupBox">
+                <img src="img/groupImg.png" alt="" />
+                <p>学生会</p>
+              </div></label
+            >
+            <label
+              ><input type="radio" value="OC" name="group" />
+              <div class="groupBox">
+                <img src="img/groupImg.png" alt="" />
+                <p>OC</p>
+              </div></label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-inner">
+        <div class="modal-content days">
+          <div class="modal-header">
+            <h3>4月13日</h3>
+          </div>
+          <div class="modal-body">
+            <button><a href="task.html">課題の追加</a></button>
+            <label
+              ><input type="radio" value="HTML" name="task" />
+              <div class="dayBox">
+                <div class="boxHeader"><h3>work5</h3></div>
+                <p>メモを記入</p>
+              </div></label
+            >
+            <label
+              ><input type="radio" value="js" name="task" />
+              <div class="dayBox">
+                <div class="boxHeader"><h3>課題３</h3></div>
+                <p>メモを記入</p>
+              </div></label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="class_num">
       <div class="frame">
-        <h1><img src="img/IMG_2845.JPG" alt="クラスメイト" /></h1>
+        <h1>
+          <img
+            src="img/IMG_2845.JPG"
+            alt="クラスメイト"
+            class="modalOpen"
+            data-modal="0"
+          />
+        </h1>
       </div>
       <p>3-1</p>
     </section>
@@ -101,5 +172,6 @@
       ><img src="img/ToriNote_logo.png" alt="" width="75" height="75"
     /></picture>
     <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
